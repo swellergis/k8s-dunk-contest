@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dunk-service-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dunk-service
+  template:
+    metadata:
+      labels:
+        app: dunk-service
+    spec:
+      containers:
+        - name: dunk-service
+          image: skionus/dunk-service:1.0.0
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dunk-service-svc
+spec:
+  selector:
+    app: dunk-service
+  type: ClusterIP
+  ports:
+    - name: dunk-service
+      protocol: TCP
+      port: 4001
+      targetPort: 4001
