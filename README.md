@@ -1,1 +1,1 @@
-# k8s-dunk-contest
+# dunk-contest
