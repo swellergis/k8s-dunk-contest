@@ -34,8 +34,7 @@ const start = async () => {
       console.table(parsedData);
 
       const mongoClient = await MongoClient.connect(
-        // "mongodb://stats-mongo-service:27017/statistic-service"
-        "mongodb://localhost:27017/statistic-service"
+        "mongodb://stats-mongo-service:27017/statistic-service"
       );
 
       const db = mongoClient.db();
