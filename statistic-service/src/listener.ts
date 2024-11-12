@@ -3,8 +3,7 @@ import { MongoClient } from "mongodb";
 
 const start = async () => {
   const stan = nats.connect("dunk-contest", "321", {
-    // url: "http://nats-service:4222",
-    url: "http://localhost:4222",
+    url: "http://nats-service:4222",
   });
 
   stan.on("connect", () => {

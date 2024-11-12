@@ -8,8 +8,7 @@ attemptDunkRouter.post(
   "/dunk-contest/attempt/:playerName",
   async (req: Request, res: Response) => {
     const mongoClient = await MongoClient.connect(
-      // "mongodb://dunk-mongo-service:27017/dunk-service"
-      "mongodb://127.0.0.1:27017/dunk-service"
+      "mongodb://dunk-mongo-service:27017/dunk-service"
     );
 
     const db = mongoClient.db();
