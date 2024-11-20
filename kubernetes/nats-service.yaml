@@ -30,6 +30,7 @@ spec:
               "-SD",
               "-cid",
               "dunk-contest",
+              "--jetstream",
             ]
 
 ---

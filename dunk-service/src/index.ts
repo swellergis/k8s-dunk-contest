@@ -13,8 +13,9 @@ const start = async () => {
   try {
     await natsConnector.connectToNats(
       "dunk-contest",
-      "123",
+      "10",
       "http://nats-service:4222"
+      // "http://localhost:4222"
     );
 
     natsConnector.client.on("close", () => {
