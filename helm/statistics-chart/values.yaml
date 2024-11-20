@@ -1,0 +1,5 @@
+appName: statistic-service
+imageName: skionus/statistic-service:1.0.0
+deploymentName: statistic-service-depl
+replicas: 1
+

@@ -1,0 +1,6 @@
+appName: dunk-service
+imageName: skionus/dunk-service:1.0.0
+deploymentName: dunk-service-depl
+serviceName: dunk-service-svc
+replicas: 1
+

@@ -1,0 +1,6 @@
+appName: dunk-mongo
+imageName: mongo
+deploymentName: dunk-mongo-deployment
+serviceName: dunk-mongo-service
+replicas: 1
+

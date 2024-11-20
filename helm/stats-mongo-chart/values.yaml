@@ -1,0 +1,6 @@
+appName: stats-mongo
+imageName: mongo
+serviceName: stats-mongo-service
+deploymentName: stats-mongo-deployment
+replicas: 1
+

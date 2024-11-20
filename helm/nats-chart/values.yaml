@@ -1,0 +1,4 @@
+appName: nats
+imageName: nats-streaming:0.25.6
+serviceName: nats-service
+replicas: 1
