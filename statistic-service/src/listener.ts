@@ -4,7 +4,7 @@ import { MongoClient } from "mongodb";
 const start = async () => {
   const stan = nats.connect("dunk-contest", "1234", {
     url: "nats://nats-service:4222", waitOnFirstConnect: true
-    // url: "http://127.0.0.1:4222", waitOnFirstConnect: true
+    // url: "http://localhost:4222", waitOnFirstConnect: true
   });
 
   stan.on("connect", () => {
@@ -36,7 +36,7 @@ const start = async () => {
 
       const mongoClient = await MongoClient.connect(
         "mongodb://stats-mongo-service:27017/statistic-service"
-        // "mongodb://127.0.0.1:27017/statistic-service"
+        // "mongodb://localhost:27017/statistic-service"
       );
 
       const db = mongoClient.db();
