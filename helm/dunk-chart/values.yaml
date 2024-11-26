@@ -1,6 +1,10 @@
+
+# The namepsace objects will be created in.  This needs to match the installed ingress
+# since services pointed to by ingress must be in the same namespace as the ingress
+namespace: dev
+
 appName: dunk-service
 imageName: skionus/dunk-service:1.0.0
 deploymentName: dunk-service-depl
 serviceName: dunk-service-svc
 replicas: 1
-
